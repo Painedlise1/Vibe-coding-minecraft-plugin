@@ -1,0 +1,19 @@
+name: DungeonsCore
+version: '1.1.0'
+main: com.dungeonscore.DungeonsCore
+api-version: '1.21'
+description: Custom dungeon items, boss crowns and the Dungeons resource pack.
+
+commands:
+  dungeons:
+    description: DungeonsCore commands.
+    usage: /<command> <dungeon|give|list|pack|boss|mana>
+    aliases: [dgn]
+
+permissions:
+  dungeons.admin:
+    description: Give custom items and resend the resource pack to other players.
+    default: op
+  dungeons.play:
+    description: Join and leave the dungeon.
+    default: true
